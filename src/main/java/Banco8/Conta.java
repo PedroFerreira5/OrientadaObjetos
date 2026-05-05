@@ -1,6 +1,8 @@
+package Banco8;
+
 public class Conta {
 
-    private double saldo;
+    protected double saldo;
 
     public Conta(double saldoInicial) {
         this.saldo = saldoInicial;
@@ -17,7 +19,7 @@ public class Conta {
 
     public boolean sacar(double valor) {
         if ((this.saldo  - valor) >= 0) {
-            saldo = saldo - valor;
+            this.saldo = this.saldo - valor;
             return true;
         }
         return false;

@@ -1,3 +1,5 @@
+package Banco4;
+
 public class TesteBanco {
 
     public static void main(String[] args) {
